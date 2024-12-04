@@ -1,4 +1,4 @@
-# Gatsby Sound Orchestra
+# Kokavská Izba
 
 # Docker
 
@@ -16,10 +16,10 @@ composer run-script create-env-config-file
 Edit enviroment (.env) config file:
 
 ```shell
-APP_NAME=GatsbySoundsOrchestra
-DB_DATABASE=gatsbysoundsorchestra
+APP_NAME=KokavskaIzba
+DB_DATABASE=kokavskaizba
 
-EMAIL_USERNAME=no-reply@taoscorpi.sk
+EMAIL_USERNAME=no-reply@kokavskaizba.sk
 EMAIL_PASSWORD=<password>
 ```
 
