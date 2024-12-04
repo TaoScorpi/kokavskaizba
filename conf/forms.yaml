@@ -1,0 +1,23 @@
+contact:
+  - provider:
+      - email:
+          - subjet: Ziadost o kontaktovanie
+          - bcc:
+              - copy@copy.com
+  - fullname:
+      name: Meno a priezvisko
+      type: input
+      kind: string
+      max: 60
+      required: true
+      error: Meno a priezvisko je povinny udaj
+  - email:
+      name: Email
+      type: input
+      kind: email
+      required: true
+      error: Email je povinny udaj
+  - message:
+      name: Sprava
+      type: textarea
+      kind: text

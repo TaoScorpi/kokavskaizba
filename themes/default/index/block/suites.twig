@@ -1,0 +1,67 @@
+<section id="{{nav.suites}}" class="section padding-right">
+  <div class="container mt-3 mb-3">
+    <div class="row d-flex">
+      <div class="col-lg-7" data-aos="fade-up">
+        <h3 class="headline"> "{{ suites.headline|whitespace|raw}}"</h2>
+      </div>
+    </div> 
+    <div class="col-lg-11" data-aos="fade-up">
+      <div class="image-wrapper position-relative rounded-5 mb-4">
+      <img src="{{ suites.zoom.image}}" class="img-fluid zoom-image" alt="{{ suites.zoom.title}}">
+        <div class="text-overlay">
+          <h2 class="text-start">{{ suites.zoom.title|whitespace|raw}}</h2>
+        </div>
+      </div>
+    </div>  
+    <div class="row d-flex">
+      <div class="col-lg-7 pt-6" data-aos="fade-up">
+        <h2 class="headline pb-5"> {{ suites.title|whitespace|raw }}</h2>
+      </div> 
+    </div>  
+    <div class="row d-flex">
+      <!-- Suites Gallery -->
+      <div class="col-md-8" data-aos="fade-right">
+        <!-- Gallery content -->
+        <div class="tab-content" id="v-pills-tabContent">
+          {% for room in suites.rooms %}
+          <div class="tab-pane fade show {% if loop.first %}active{% endif %}" id="v-pills-{{room.nav}}" role="tabpanel" aria-labelledby="v-pills-{{room.nav}}-tab">
+            <div id="carousel{{room.nav}}" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-5">
+                {% for image in room.images %}
+                <div class="carousel-item {% if loop.first %}active{% endif %}">
+                  <img src="{{image.img}}" alt="{{room.name}}">
+                </div>
+                {% endfor %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{room.nav}}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel{{room.nav}}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          {% endfor %}  
+        </div> <!-- @Gallery content end-->
+      </div>  <!-- @Suites Gallery end--> 
+      <!-- Suites Navigation -->
+      <div class="col-md-4 d-flex align-items-center" data-aos="fade-left">
+        <div class="nav flex-column align-items-middle nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        {% for room in suites.rooms %}
+          <button class="big nav-link fs-3 text-right ln-2 {% if loop.first %} active {% endif %}" id="v-pills-{{room.nav}}-tab" 
+          data-bs-toggle="pill" 
+          data-bs-target="#v-pills-{{room.nav}}" 
+          type="button" 
+          role="tab" 
+          aria-controls="v-pills-{{room.nav}}" 
+          aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
+            <span>{{room.name}}</span> <span class="ms-2">{{room.capacity}}</span>
+          </button>
+        {% endfor %}  
+        </div>
+      </div> <!-- @Suites Navigation end-->
+    </div>     
+  </div>
+</section><!-- @suites end -->

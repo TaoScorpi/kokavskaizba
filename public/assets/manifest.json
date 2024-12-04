@@ -1,0 +1,6 @@
+{
+  "app/app.css": "static/app/app.css",
+  "app/app.js": "static/app/app.js",
+  "app/form.js": "static/app/form.js",
+  "app/signup.js": "static/app/signup.js"
+}

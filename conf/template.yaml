@@ -1,0 +1,55 @@
+appname: Kokavská izba
+
+base:
+  logocommon: assets/img/logo_web.png
+  logowhite: assets/img/logo_primary_white.png
+  address:
+    street: Štúrova 30B
+    zip: 985 05  
+    city: Kokava nad Rimavicou
+    gps: 
+      att: 48.57226551115464, 19.84084375392988
+      url: https://maps.app.goo.gl/Aaut9tVw6ndCC3iZ6
+  contact:
+    phone: +421 944 549 448
+    email: rezervacie@kokavskaizba.sk  
+
+nav:
+  menu: menu
+  home: domov
+  top: hore
+  accommodation: ubytovanie
+  suites: apartmány
+  prices: cenník   
+  restaurant: reštaurácia
+  around: v okolí 
+  contact: kontakt
+
+hero:
+  image: assets/img/kokavska_izba_mainbanner.webp
+  title: Kokavská izba
+
+forms:
+  contact:
+    captcha: $captcha
+    wait: Vaša žiadosť sa spracováva, môže to chvíľu trvať
+    success: Odoslanie žiadosti bolo úspešne
+    error: Odoslanie žiadosti nebolo úspešné, skúste to neskôr ešte raz alebo nás kontaktujte telefonicky
+    errors:
+      empty:
+        code: Neplatný potvrdzovací kód
+        gdpr: Bez súhlasu so zásadami ochrany osobných údajov nie je možné odoslať správu
+        fullname: Meno kontaktnej osoby je povinný údaj
+        email: Email je povinný údaj
+        notice: Správa je povinný údaj
+  order:
+    captcha: $captcha
+    wait: Vaša žiadosť sa spracováva, môže to chvíľu trvať
+    success: Odoslanie žiadosti bolo úspešne
+    error: Odoslanie žiadosti nebolo úspešné, skúste to neskôr ešte raz alebo nás kontaktujte telefonicky
+    errors:
+      empty:
+        gdpr: Bez súhlasu so zásadami ochrany osobných údajov nie je možné odoslať správu
+        fullname: Meno kontaktnej osoby je povinný údaj
+        phone: Telefón je povinný údaj
+        email: Email je povinný údaj

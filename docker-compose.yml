@@ -1,0 +1,59 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: sammy
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: universal
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - universal
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d/
+    networks:
+      - universal
+
+  redis:
+    image: 'bitnami/redis:latest'
+    restart: unless-stopped
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL,CONFIG
+    command: /opt/bitnami/scripts/redis/run.sh --maxmemory 100mb
+    ports:
+      - '6379:6379'
+    volumes:
+      - ./docker-compose/redis/redis.conf:/opt/bitnami/redis/mounted-etc/redis.conf
+      - ./storage/redis-persistence:/bitnami/redis/data
+    networks:
+      - universal
+
+  mongodb:
+    image: 'bitnami/mongodb:latest'
+    restart: unless-stopped
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MONGODB_EXTRA_FLAGS=--wiredTigerCacheSizeGB=2
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./storage/mongodb-persistence:/bitnami/mongodb
+    networks:
+      - universal
+
+networks:
+  universal:
+    driver: bridge

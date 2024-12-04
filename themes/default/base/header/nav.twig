@@ -1,0 +1,27 @@
+<section id="nav" class="position-fixed">
+  <nav class="position-relative">
+    <div class="navbar d-flex flex-column me-5">
+      <!-- @menuIcon -->
+        <div class="hamburger icon" data-label="{{nav.menu}}">
+          <div class="hamburger-line line-top"></div>
+          <div class="hamburger-line line-middle"></div>
+          <div class="hamburger-line line-bottom"></div>
+        </div><!-- @menuIcon end -->
+      <!-- @navIcons -->
+      <div class="navicons">
+        <i id="icon-{{nav.accommodation}}" class="material-symbols-outlined me-2 icon icon-thin fs-2" data-label="{{nav.accommodation}}"
+           onclick="document.getElementById('{{nav.accommodation}}').scrollIntoView({ behavior: 'smooth' });">room_service</i>
+        <i id="icon-{{nav.suites}}" class="material-symbols-outlined me-2 icon icon-thin fs-2" data-label="{{nav.suites}}"
+           onclick="document.getElementById('{{nav.suites}}').scrollIntoView({ behavior: 'smooth' });">king_bed</i>
+        <i id="icon-{{nav.prices}}" class="material-symbols-outlined me-2 icon icon-thin fs-2 mt-2" data-label="{{nav.prices}}"
+           onclick="document.getElementById('{{nav.prices}}').scrollIntoView({ behavior: 'smooth' });">account_balance_wallet</i>
+        <i id="icon-{{nav.restaurant}}" class="material-symbols-outlined me-2 icon icon-thin fs-2 mt-2" data-label="{{nav.restaurant}}"
+           onclick="document.getElementById('{{nav.restaurant}}').scrollIntoView({ behavior: 'smooth' });">set_meal</i>
+        <i id="icon-{{nav.around}}" class="material-symbols-outlined me-2 icon icon-thin fs-2 mt-2" data-label="{{nav.around}}"
+           onclick="document.getElementById('{{nav.around}}').scrollIntoView({ behavior: 'smooth' });">local_florist</i>
+        <i id="icon-{{nav.contact}}" class="material-symbols-outlined me-2 icon icon-thin fs-2 mt-2" data-label="{{nav.contact}}"
+           onclick="document.getElementById('{{nav.contact}}').scrollIntoView({ behavior: 'smooth' });">send</i>
+      </div><!-- @navIcons end -->
+    </div>  
+   </nav>
+</section><!-- @nav end -->

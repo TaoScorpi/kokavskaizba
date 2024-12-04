@@ -1,0 +1,80 @@
+- url: /contact
+  method: POST
+  component: App\Components\SendContactForm
+  template: email/contact/ticket.twig
+
+- url: /
+  template: index/main.twig
+  data:
+    - title: Kokavská izba 
+    - accommodation:
+        title: Ubytovanie <br> v Kokave.   
+        intro: Vitajte v pokojnom prostredí údolia Rimavice.
+        desc: Vitajte v Kokave. Ak hľadáte miesto na oddych, ste tu správne. Naše nové
+              apartmány sú vkusne zariadené, privítajú vás čistotou, útulnosťou a
+              dokonalým komfortom. 
+        image1: assets/img/kokavska_izba_002.webp
+        name1: Kokavská izba - apartmány
+        image2: assets/img/kokavska_izba_001.webp
+        title2: Kokavská izba - apartmány 
+        image3: assets/img/kokavska_izba_003.webp
+        title3: Kokavská izba - apartmány  
+    - suites:
+        title: Apartmány.
+        headline: Nechajte sa uniesť atmosférou miesta, kde každý detail hovorí o pohostinnosti a pohode.     
+        informations: Ceny uvedné vrátane 5 % DPH. Daň za ubytovanie 0,35 € / osoba / prenocovanie.
+        zoom:
+          image: assets/img/kokavska_izba_004.webp
+          title: <span data-aos="fade-left"> Podmanivý </span>
+                 <span class="ms-5" data-aos="fade-left"> industriálny </span> 
+                 <span data-aos="fade-left"> štýl... </span>   
+        rooms:
+          - room(1):
+            nav: apartmenexclusive
+            name:  Apartmán Exclusive 
+            capacity: 6+2
+            icons: 6 <span class="material-symbols-outlined">face_6 </span> + 2 <span class="material-symbols-outlined">face_6 </span>
+            images:
+              - image(1): 
+                img: assets/img/01_apartmanexclusive/apartmanexclusive001.webp
+              - image(2):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive002.webp
+          - room(2):
+            nav: apartmenfamily
+            name:  Apartmán Family 
+            capacity: 4+2
+            icons: 4 <span class="material-symbols-outlined">face_6 </span> + 2 <span class="material-symbols-outlined">face_6 </span>
+            images:
+              - image(1): 
+                img: assets/img/02_apartmanfamily/apartmanfamily001.webp  
+          - room(3):    
+            nav: suitfamilyplus
+            name:  Suit Family Plus
+            capacity: 2+1 
+            icons: 2 <span class="material-symbols-outlined">face_6 </span> + 1 <span class="material-symbols-outlined">face_6 </span> (2 <span class="material-symbols-outlined">child_care </span>)
+            images:
+              - image(1): 
+                img: assets/img/03_suitfamilyplus/suitfamilyplus001.webp 
+          - room(4):    
+            nav: suitfamily
+            name:  Suit Family
+            capacity: 2+1
+            icons: 2 <span class="material-symbols-outlined">face_6 </span> + 1 <span class="material-symbols-outlined">face_6 </span> (2 <span class="material-symbols-outlined">child_care </span>)
+            images:
+              - image(1): 
+                img: assets/img/04_suitfamily/suitfamily001.webp
+          - room(5):    
+            nav: suitbasic
+            name:  Suit Basic
+            capacity: 2 
+            icons: 2 <span class="material-symbols-outlined">face_6 </span> 
+            images:
+              - image(1): 
+                img: assets/img/05_suitbasic/suitbasic001.webp         
+      
+    - prices:
+        title: Ubytovanie. <br/> Cenník.     
+   
+    
+
+                    

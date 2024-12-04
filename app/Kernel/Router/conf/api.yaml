@@ -1,0 +1,3 @@
+- method: POST
+  url: /api/form/config
+  component: App\Kernel\Components\Api\Form\Config

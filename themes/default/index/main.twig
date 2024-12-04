@@ -1,0 +1,19 @@
+{% extends '@theme/layout.twig' %}
+
+{% block header %}
+  <!-- @nav-->
+  {% include '@theme/base/header/nav.twig' %}
+  <!-- @header-->
+  {% include '@theme/base/header/header.twig' %}
+{% endblock %}
+
+{% block main %}
+  <!-- @hero-->
+  {% include '@theme/base/hero/hero.twig' %}
+  <!-- @accommodation-->
+  {% include '@theme/index/block/accommodation.twig' %}
+  <!-- @suites-->
+  {% include '@theme/index/block/suites.twig' %}
+  <!-- @pricelist-->
+  {% include '@theme/index/block/pricelist.twig' %}
+{% endblock %}

@@ -1,0 +1,30 @@
+<section id="{{nav.prices}}" class="section padding-right bg-point">
+  <div class="container mt-3 bg-grey pt-5 pb-5 rounded-end-5">
+    <div class="row d-flex m-5">
+      <div class="col-lg-12" data-aos="fade-up">
+         <h2 class="headline pb-5 text-end"> {{ prices.title|whitespace|raw }}</h2>
+      </div>
+    </div>
+    <div class="accordion" id="accordionPrices">
+    {% for room in suites.rooms %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button fs-2 " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ loop.index }}" aria-expanded="true" aria-controls="collapse-{{ loop.index }}">
+          <div class="row d-flex justify-content-between w-100">
+            <span class="col">{{room.name}}</span>
+            <span class="col text-end me-5 fs-4"> {{room.icons|raw}}</span>
+          </div>
+        </button>
+      </h2>
+      <div id="collapse-{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#accordionPrices">
+        <div class="accordion-body">
+          <p class="fs-3">This is the first item's accordion body.</p> 
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-lg-12 mt-5" data-aos="fade-up">
+         <p class="text-center"> {{ suites.informations|whitespace|raw }}</p>
+    </div>
+  </div>
+</section><!-- @accommodation end -->

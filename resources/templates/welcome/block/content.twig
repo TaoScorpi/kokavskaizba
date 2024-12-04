@@ -1,0 +1,46 @@
+<div class="w-full max-w-7xl mx-auto">
+  <div class="lg:flex">
+    <div class="min-w-0 w-full flex-auto lg:static lg:max-h-full lg:overflow-visible">
+      <div class="px-4 sm:px-6 xl:px-8 pt-10 pb-16">
+        <div class="border-b border-gray-200 mb-5">
+          <h1 class="text-5xl leading-none font-extrabold text-gray-900 tracking-tight mb-4">
+            Getting started with Universal
+          </h1>
+          <p class="text-2xl tracking-tight mb-3">
+            Learn Universal the way that best matches your learning style.
+          </p>
+        </div>
+        <h2 class="group flex whitespace-pre-wrap font-semibold text-xl mb-4">
+          <span>Create your first page</span>
+        </h2>
+        <p class="text-sm font-medium text-gray-800">
+          One of the most important service providers in your application is the Component. 
+          This service provider loads the routes contained within your application's configuration file.
+        </p>
+        <div class="my-6 rounded-xl overflow-hidden bg-gray-800 prose">
+          <pre class="language-markdown">
+            <code class="language-markdown">
+              .
+              ├── conf                    # Application config folder
+                └── components.yaml       # Components configuration file
+            </code>
+          </pre>
+        </div>
+        <p class="text-sm font-medium text-gray-800">
+          Go ahead, crack open the components.yaml configuration file,
+          put bellow example code and take a look at how it works!
+        </p>
+        <div class="my-6 rounded-xl overflow-hidden bg-gray-800 prose">
+          <pre class="language-yaml">
+            <code class="language-yaml">
+              - url: /
+                template: index.twig
+                data:
+                  - title: Hello World
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

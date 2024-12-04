@@ -1,0 +1,30 @@
+<header id="header">
+  <div class="container-fluid padding-side mt-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-start">
+      <!-- @address -->
+      <div class="col-3 address ms-5">
+        <p class="lh-1 fs-5">{{ base.address.street }}, {{ base.address.zip}}&nbsp;&nbsp;{{ base.address.city}}<br>
+        <a class="fs-7 text link-light" href="{{ base.address.gps.url }}" target="_blank" alt="Zobraziť na mape"> 
+                 {{ base.address.gps.att}}</a><br>
+        </p>        
+        <button href="#" class="btn btn-yellow rounded-pill btn-xl text-uppercase mt-4 ms-3">
+        Rezervácie
+        </button>
+      </div><!-- @address end -->
+      <!-- @logo -->
+      <div class="col-2 logo">
+        <a class="navbar-brand" href="/">
+          <img src={{ base.logocommon }} class="logo img-fluid">
+        </a>
+      </div><!-- @logo end -->
+      <!-- @menu -->
+      <div class="col-3 menu me-5 ">
+        <div class="col d-flex flex-wrap align-items-center justify-content-end">
+         <i class="material-symbols-outlined me-2 icon-thin fs-2 mt--1">phone_in_talk</i>&nbsp;
+         <a class="fs-5 link-light" href="tel:{{ base.contact.phone|replace({' ': ''})}}" target="_blank" alt="Zobraziť na mape"> 
+         {{base.contact.phone}}</a> 
+        </div>   
+      </div><!-- @menu end -->
+    </div>  
+  </div>
+</header><!-- @header end-->

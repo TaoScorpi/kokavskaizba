@@ -1,0 +1,3 @@
+App\Kernel\Router\Entity\Welcome:
+  url: /
+  template: welcome/main.twig

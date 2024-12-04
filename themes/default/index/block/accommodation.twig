@@ -1,0 +1,18 @@
+<section id="{{nav.accommodation}}" class="section padding-right">
+  <div class="container mt-3">
+    <div class="row d-flex">
+      <div class="col-lg-7" data-aos="fade-up">
+        <h2 class="headline"> {{ accommodation.title|whitespace|raw}}</h2>
+        <p class="intro fw-semibold fs-3"> {{ accommodation.intro|whitespace|raw}}</p>
+        <p class="desc fs-3 lh-base"> {{ accommodation.desc|whitespace|raw}}</p>
+        <img class="img-fluid rounded-5 mt-5" src="{{ accommodation.image1}}">
+      </div>
+      <div class="col-lg-5" data-aos="fade-up">
+        <img class="img-fluid rounded-5 mb-4" src="{{ accommodation.image2}}">
+        <div class="col-lg-11" data-aos="fade-up">
+          <img class="img-fluid rounded-5 mb-4" src="{{ accommodation.image3}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- @accommodation end -->
