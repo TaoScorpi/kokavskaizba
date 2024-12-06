@@ -10,7 +10,7 @@
     - accommodation:
         title: Ubytovanie <br> v Kokave.   
         intro: Vitajte v pokojnom prostredí údolia Rimavice.
-        desc: Vitajte v Kokave. Ak hľadáte miesto na oddych, ste tu správne. Naše nové
+        desc: Ak hľadáte miesto na oddych, ste tu správne. Naše nové
               apartmány sú vkusne zariadené, privítajú vás čistotou, útulnosťou a
               dokonalým komfortom. 
         image1: assets/img/kokavska_izba_002.webp
@@ -22,7 +22,7 @@
     - suites:
         title: Apartmány.
         headline: Nechajte sa uniesť atmosférou miesta, kde každý detail hovorí o pohostinnosti a pohode.     
-        informations: Ceny uvedné vrátane 5 % DPH. Daň za ubytovanie 0,35 € / osoba / prenocovanie.
+        informations: Ceny uvedné vrátane 5 % DPH. Daň za ubytovanie 0,35 € / osoba / prenocovanie.<br/>Poskytovanie stravovania nie je súčasťou ubytovacích služieb. 
         zoom:
           image: assets/img/kokavska_izba_004.webp
           title: <span data-aos="fade-left"> Podmanivý </span>
@@ -33,7 +33,7 @@
             nav: apartmenexclusive
             name:  Apartmán Exclusive 
             capacity: 6+2
-            icons: 6 <span class="material-symbols-outlined">face_6 </span> + 2 <span class="material-symbols-outlined">face_6 </span>
+            icons: 6 <span class="material-symbols-outlined">sentiment_neutral </span> + 2 <span class="material-symbols-outlined">sentiment_neutral </span>
             images:
               - image(1): 
                 img: assets/img/01_apartmanexclusive/apartmanexclusive001.webp
@@ -43,7 +43,7 @@
             nav: apartmenfamily
             name:  Apartmán Family 
             capacity: 4+2
-            icons: 4 <span class="material-symbols-outlined">face_6 </span> + 2 <span class="material-symbols-outlined">face_6 </span>
+            icons: 4 <span class="material-symbols-outlined">sentiment_neutral </span> + 2 <span class="material-symbols-outlined">sentiment_neutral </span>
             images:
               - image(1): 
                 img: assets/img/02_apartmanfamily/apartmanfamily001.webp  
@@ -51,7 +51,7 @@
             nav: suitfamilyplus
             name:  Suit Family Plus
             capacity: 2+1 
-            icons: 2 <span class="material-symbols-outlined">face_6 </span> + 1 <span class="material-symbols-outlined">face_6 </span> (2 <span class="material-symbols-outlined">child_care </span>)
+            icons: 2 <span class="material-symbols-outlined">sentiment_neutral </span> + 1 <span class="material-symbols-outlined">sentiment_neutral </span> (2 <span class="material-symbols-outlined">child_care </span>)
             images:
               - image(1): 
                 img: assets/img/03_suitfamilyplus/suitfamilyplus001.webp 
@@ -59,7 +59,7 @@
             nav: suitfamily
             name:  Suit Family
             capacity: 2+1
-            icons: 2 <span class="material-symbols-outlined">face_6 </span> + 1 <span class="material-symbols-outlined">face_6 </span> (2 <span class="material-symbols-outlined">child_care </span>)
+            icons: 2 <span class="material-symbols-outlined">sentiment_neutral </span> + 1 <span class="material-symbols-outlined">sentiment_neutral </span> (2 <span class="material-symbols-outlined">child_care </span>)
             images:
               - image(1): 
                 img: assets/img/04_suitfamily/suitfamily001.webp
@@ -67,14 +67,35 @@
             nav: suitbasic
             name:  Suit Basic
             capacity: 2 
-            icons: 2 <span class="material-symbols-outlined">face_6 </span> 
+            icons: 2 <span class="material-symbols-outlined">sentiment_neutral </span> 
             images:
               - image(1): 
-                img: assets/img/05_suitbasic/suitbasic001.webp         
-      
+                img: assets/img/05_suitbasic/suitbasic001.webp           
     - prices:
-        title: Ubytovanie. <br/> Cenník.     
-   
-    
+        title: Ubytovanie. <br/> Cenník.
+    - restaurant:
+        title: Reštaurácia.
+        intro: Výborné jedlo v krásnom prostredí.
+        desc: Pri návšteve Kokavy nad Rimavicou sa určite zastavte v jednej z najobľúbenejších reštaurácií, a to nielen pre miestnych.
+             Kokavská izba - reštaurácia sa nachádza priamo pri apartmánoch a okrem výbornej kuchyne, profesionálnej a milej obsluhy
+             určite oceníte čarovné prostredie a príjemnú atmosféru.
+        image: assets/img/kokavska_izba_restauracia.webp    
+    - surrounding:
+        title: Kam V Okolí.
+        desc: Kokava nad Rimavicou je skrytým klenotom Slovenských hôr a nevyčerpanou studnicou tradičných zážitkových udalostí.
+             Je ideálnym miestom nielen pre tých, ktorí hľadajú aktívny oddych v prírode, ale aj pre návštevníkov, ktorých očaril
+             slovenský folkór, gastronómia, umenie... Objavte neodolateľné príležitosti na výlety, turistiku a ďalšie outdoorové aktivity v okolí, ktoré vás zaručene nadchnú.        
+        events: 
+          - event(1):
+            image: assets/img/kokavska_izba_003.webp
+            title: Rozhľadňa Slopovo
+            desc: xx
+    - contact:
+        title: Online <br> Rezervácie.
+        desc: V prípade záujmu o rezerváciu, alebo overenie dostupnosti izieb, prosím, 
+              vyplňte kontaktný formulár. Rezervácia je platná momentom záväzného emailového potvrdenia zo strany poskytovateľa.
+    - about:
+       intro: Skutočná pohostinnosť spočíva v tom, že dáš hosťovi všetko, čo potrebuje, a nič, čo mu nechýba.
+
 
                     

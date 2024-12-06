@@ -17,7 +17,7 @@ base:
 nav:
   menu: menu
   home: domov
-  top: hore
+  top: 
   accommodation: ubytovanie
   suites: apartmány
   prices: cenník   
@@ -28,6 +28,11 @@ nav:
 hero:
   image: assets/img/kokavska_izba_mainbanner.webp
   title: Kokavská izba
+
+footer:
+  logo:
+    img: assets/img/logo_primary_white.png
+    title: Kokavská izba - apartmány
 
 forms:
   contact:

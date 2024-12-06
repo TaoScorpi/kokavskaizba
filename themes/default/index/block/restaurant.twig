@@ -1,0 +1,18 @@
+<section id="{{nav.restaurant}}" class="section padding-left">
+  <div class="container-fluid">
+    <div class="col-lg-6 bg-left rounded-5" data-aos="fade-up" style="background-image: url({{ restaurant.image}})">
+    </div>
+  </div>
+    <div class="container">
+      <div class="row d-flex">   
+        <div class="col-lg-5" data-aos="fade-up">
+          <h2 class="headline"> {{ restaurant.title|whitespace|raw}}</h2>
+          <h3 class="headline"> "{{ restaurant.intro|whitespace|raw}}"</h3>
+          <p class="desc fs-3 lh-base">{{ restaurant.desc|whitespace|raw}} </p>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up">
+        </div>
+      </div>
+    </div>  
+  </div>
+</section><!-- @restaurant end -->
