@@ -1,5 +1,5 @@
 <section id="footer" class="section footer dark">
-  <div class="container padding-right">
+  <div class="container">
     <div class="row d-flex m-5 justify-content-center">
       <div class="col-lg-4" data-aos="fade-up">
         <img src="{{ footer.logo.img }}" class="ing-fluid d-block w-100 rounded-5" alt="{{ footer.logo.title}}">
@@ -7,12 +7,35 @@
     </div> 
     <div class="row d-flex pt-5 mt-5 justify-content-center "> 
       <div class="col-lg-6 text-center" data-aos="fade-up">
-        <p class="lh-2 fs-4">{{ base.address.street }} <br>
-        {{ base.address.zip}}&nbsp;&nbsp;{{ base.address.city}}<br> <br>
-        <a class="fs-4 link-dark" href="{{ base.address.gps.url }}" target="_blank" alt="Zobraziť na mape"> 
-                 {{ base.address.gps.att}}</a><br>
-        </p>
+        <p class="lh-2 fs-4">{{ base.address.street }} 
+        <br>
+        {{ base.address.zip}}&nbsp;&nbsp;{{ base.address.city}}
+         </p>
+        <br> 
+        <br>
+        <a class="fs-4 link-white-light" href="{{ base.address.gps.url }}" target="_blank" alt="Zobraziť na mape">{{ base.address.gps.att}}</a>
+        <br>
+        <br>
+        <span class="material-symbols-outlined ms-2 fs-2">contact_support</span> 
+         <br>
+        <a class="fs-4 link-white" href="tel:{{ base.contact.phone|replace({' ': ''})}}" alt="Telefón">{{ base.contact.phone}}</a>
+        <br>
+        <a class="fs-4 link-white" href="mailto:{{ base.contact.email}}" alt="Email"> {{ base.contact.email}}</a>      
       </div>
+    </div>
+    <div class="importants row d-flex justify-content-between"> 
+      <div class="col text-start">
+        <p class="lh-2 fs-5">{{ footer.copyright }}
+      </div>
+      <div class="col text-end">
+        <ul class="list-inline d-flex justify-content-end">
+          {% for link in footer.links %}
+          <li class="list-inline-item {% if loop.last %} {% else %} me-3{% endif %}">
+            <a class="fs-5 link-white" href="{{ link.url }}">{{ link.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+       </div>
     </div>
   </div>
 </section>

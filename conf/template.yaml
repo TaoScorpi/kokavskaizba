@@ -33,6 +33,16 @@ footer:
   logo:
     img: assets/img/logo_primary_white.png
     title: Kokavská izba - apartmány
+  copyright: "@2025 Kokavská izba"
+  links:
+    - link(1):
+      url: /
+      name: VOP
+    - link(2):
+      url: /
+      name: Osobné údaje
+    - link(3):
+      name: Cookies    
 
 forms:
   contact:
