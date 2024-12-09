@@ -15,7 +15,9 @@
               <img src="{{ event.image}}" class="d-block w-100 rounded-5" alt="{{ event.title}}">
             </div>
             <div class="col-md-5">
-              <h3>{{ event.title|whitespace|raw}}</h3>
+              <h3 class="f-gold">{{ event.title|whitespace|raw}}</h3>
+              <p class="fs-5 pt-2 d-flex align-items-center">{{ event.icon|whitespace|raw}}</p>
+              <p class="fs-5 pt-2">{{ event.desc|whitespace|raw}}</p>
             </div> 
           </div> 
         </div>

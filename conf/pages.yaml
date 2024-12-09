@@ -34,11 +34,55 @@
             name:  Apartmán Exclusive 
             capacity: 6+2
             icons: 6 <span class="material-symbols-outlined">sentiment_neutral </span> + 2 <span class="material-symbols-outlined">sentiment_neutral </span>
-            images:
+            images:  
               - image(1): 
                 img: assets/img/01_apartmanexclusive/apartmanexclusive001.webp
               - image(2):   
                 img: assets/img/01_apartmanexclusive/apartmanexclusive002.webp
+              - image(3):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive003.webp 
+              - image(4):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive004.webp  
+              - image(5):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive005.webp   
+              - image(6):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive006.webp  
+              - image(7):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive007.webp
+              - image(8):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive008.webp 
+              - image(9):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive009.webp  
+              - image(10): 
+                img: assets/img/01_apartmanexclusive/apartmanexclusive010.webp
+              - image(11):   
+                img: assets/img/01_apartmanexclusive/apartmanexclusive011.webp            
+            beds:
+              - bed(1):
+                icon: <span class="material-symbols-outlined fs-2">in_home_mode</span>
+                name: Disopzícia
+                desc: Kuchyňa, spoločenská miestnosť, 2 spálne, 1 kúpeľňa s umývadlom, sprchovým kútom a WC, 1 toaleta s WC a umývadlom
+              - bed(2):
+                icon: <span class="material-symbols-outlined fs-2">bed</span>
+                name: Postele 
+                desc: 1x spálňa so 4 samostatnými lôžkami, 1x spálňa s 2 samostatnými lôžkami
+              - bed(3):
+                icon: <span class="material-symbols-outlined fs-2">chair</span>
+                name: Prístelky
+                desc: Rozkladacia pohovka v spoločenskej miestnosti s kapacitou 2 dospelí alebo 2 deti
+              - bed(4):
+                icon: <span class="material-symbols-outlined fs-2">mode_fan</span>
+                name: Vybevenie
+                desc: Chladnička, rúra, sklokeramická doska, televízia, klimatizácia, parkovanie vo dvore
+            prices:
+              - price(1):
+                name: Apartmán | 6 osôb
+                price: € 120,00 
+                desc: "apartmán | noc"
+              - price (2):
+                name: Apartmán | 6 osôb + prístelka
+                price: € 140,00 
+                desc: "apartmán | noc"
           - room(2):
             nav: apartmenfamily
             name:  Apartmán Family 
@@ -46,7 +90,47 @@
             icons: 4 <span class="material-symbols-outlined">sentiment_neutral </span> + 2 <span class="material-symbols-outlined">sentiment_neutral </span>
             images:
               - image(1): 
-                img: assets/img/02_apartmanfamily/apartmanfamily001.webp  
+                img: assets/img/02_apartmanfamily/apartmanfamily001.webp 
+              - image(2):   
+                img: assets/img/02_apartmanfamily/apartmanfamily002.webp
+              - image(3):   
+                img: assets/img/02_apartmanfamily/apartmanfamily003.webp 
+              - image(4):   
+                img: assets/img/02_apartmanfamily/apartmanfamily004.webp  
+              - image(5):   
+                img: assets/img/02_apartmanfamily/apartmanfamily005.webp   
+              - image(6):   
+                img: assets/img/02_apartmanfamily/apartmanfamily006.webp  
+              - image(7):   
+                img: assets/img/02_apartmanfamily/apartmanfamily007.webp
+              - image(8):   
+                img: assets/img/02_apartmanfamily/apartmanfamily008.webp   
+            beds:
+              - bed(1):
+                icon: <span class="material-symbols-outlined fs-2">in_home_mode</span>
+                name: Disopzícia
+                desc: Kuchyňa, spoločenská miestnosť, 1 spálňa, 1 kúpeľňa s umývadlom, vaňou a WC, 1 kúpeľňa so sprchou, umývadlom a WC
+              - bed(2):
+                icon: <span class="material-symbols-outlined fs-2">bed</span>
+                name: Postele 
+                desc: 1x spálňa so 4 samostatnými lôžkami
+              - bed(3):
+                icon: <span class="material-symbols-outlined fs-2">chair</span>
+                name: Prístelky
+                desc: Rozkladacia pohovka v spoločenskej miestnosti s kapacitou 2 dospelí alebo 2 deti
+              - bed(4):
+                icon: <span class="material-symbols-outlined fs-2">mode_fan</span>
+                name: Vybevenie
+                desc: Chladnička, rúra, sklokeramická doska, mikrovlnná rúra, televízia, klimatizácia, parkovanie vo dvore
+            prices:
+              - price(1):
+                name: Apartmán | 4 osoby
+                price: € 100,00 
+                desc: "apartmán | noc"
+              - price (2):
+                name: Apartmán | 4 osoby + prístelka
+                price: € 120,00 
+                desc: "apartmán | noc"       
           - room(3):    
             nav: suitfamilyplus
             name:  Suit Family Plus
@@ -55,6 +139,46 @@
             images:
               - image(1): 
                 img: assets/img/03_suitfamilyplus/suitfamilyplus001.webp 
+              - image(2):   
+                img: assets/img/03_suitfamilyplus/suitfamilyplus002.webp
+              - image(3):   
+                img: assets/img/03_suitfamilyplus/suitfamilyplus003.webp 
+              - image(4):   
+                img: assets/img/03_suitfamilyplus/suitfamilyplus004.webp  
+              - image(5):   
+                img: assets/img/03_suitfamilyplus/suitfamilyplus005.webp   
+              - image(6):   
+                img: assets/img/03_suitfamilyplus/suitfamilyplus006.webp  
+              - image(7):   
+                img: assets/img/03_suitfamilyplus/suitfamilyplus007.webp
+              - image(8):   
+                img: assets/img/03_suitfamilyplus/suitfamilyplus008.webp    
+            beds:
+              - bed(1):
+                icon: <span class="material-symbols-outlined fs-2">in_home_mode</span>
+                name: Disopzícia
+                desc: Spoločenská miestnosť s predsieňou a spálňou, 1 kúpeľňa s umývadlom, rohovou vaňou, sprchovým kútom a WC
+              - bed(2):
+                icon: <span class="material-symbols-outlined fs-2">bed</span>
+                name: Postele 
+                desc: 1x spálňa s manželskou postelou
+              - bed(3):
+                icon: <span class="material-symbols-outlined fs-2">chair</span>
+                name: Prístelky
+                desc: Rozkladacia pohovka v spoločenskej miestnosti s kapacitou 1 dospelý alebo 2 deti
+              - bed(4):
+                icon: <span class="material-symbols-outlined fs-2">mode_fan</span>
+                name: Vybevenie
+                desc: Televízia, klimatizácia, parkovanie vo dvore
+            prices:
+              - price(1):
+                name: Suit | 2 osoby
+                price: € 100,00 
+                desc: "suit | noc"
+              - price (2):
+                name: Suit | 2 osoby + prístelka
+                price: € 120,00 
+                desc: "suit | noc"     
           - room(4):    
             nav: suitfamily
             name:  Suit Family
@@ -63,6 +187,42 @@
             images:
               - image(1): 
                 img: assets/img/04_suitfamily/suitfamily001.webp
+              - image(2):   
+                img: assets/img/04_suitfamily/suitfamily002.webp
+              - image(3):   
+                img: assets/img/04_suitfamily/suitfamily003.webp 
+              - image(4):   
+                img: assets/img/04_suitfamily/suitfamily004.webp  
+              - image(5):   
+                img: assets/img/04_suitfamily/suitfamily005.webp   
+              - image(6):   
+                img: assets/img/04_suitfamily/suitfamily006.webp  
+            beds:
+              - bed(1):
+                icon: <span class="material-symbols-outlined fs-2">in_home_mode</span>
+                name: Disopzícia
+                desc: Spoločenská miestnosť s predsieňou a spálňou, 1 kúpeľňa s umývadlom, vaňou, sprchovým kútom a WC
+              - bed(2):
+                icon: <span class="material-symbols-outlined fs-2">bed</span>
+                name: Postele 
+                desc: 1x spálňa s manželskou postelou
+              - bed(3):
+                icon: <span class="material-symbols-outlined fs-2">chair</span>
+                name: Prístelky
+                desc: Rozkladacia pohovka v spoločenskej miestnosti s kapacitou 1 dospelý alebo 2 deti
+              - bed(4):
+                icon: <span class="material-symbols-outlined fs-2">mode_fan</span>
+                name: Vybevenie
+                desc: Televízia, klimatizácia, parkovanie vo dvore
+            prices:
+              - price(1):
+                name: Suit | 2 osoby
+                price: € 100,00 
+                desc: "suit | noc"
+              - price (2):
+                name: Apartmán | 2 osoby + prístelka
+                price: € 120,00 
+                desc: "suit | noc"         
           - room(5):    
             nav: suitbasic
             name:  Suit Basic
@@ -70,7 +230,33 @@
             icons: 2 <span class="material-symbols-outlined">sentiment_neutral </span> 
             images:
               - image(1): 
-                img: assets/img/05_suitbasic/suitbasic001.webp           
+                img: assets/img/05_suitbasic/suitbasic001.webp 
+              - image(2):   
+                img: assets/img/05_suitbasic/suitbasic002.webp
+              - image(3):   
+                img: assets/img/05_suitbasic/suitbasic003.webp    
+            beds:
+              - bed(1):
+                icon: <span class="material-symbols-outlined fs-2">in_home_mode</span>
+                name: Disopzícia
+                desc: Spálňa s kreslom, 1 kúpeľňa s umývadlom, sprchovým kútom a WC
+              - bed(2):
+                icon: <span class="material-symbols-outlined fs-2">bed</span>
+                name: Postele 
+                desc: 1x spálňa s manželskou postelou
+              - bed(3):
+                icon: <span class="material-symbols-outlined fs-2">chair</span>
+                name: Prístelky
+                desc: 1x spálňa s manželskou posteľou
+              - bed(4):
+                icon: <span class="material-symbols-outlined fs-2">mode_fan</span>
+                name: Vybevenie
+                desc: Televízia, klimatizácia, parkovanie vo dvore
+            prices:
+              - price(1):
+                name: Suit | 2 osoby
+                price: € 100,00 
+                desc: "suit | noc"              
     - prices:
         title: Ubytovanie. <br/> Cenník.
     - restaurant:
@@ -87,9 +273,32 @@
              slovenský folkór, gastronómia, umenie... Objavte neodolateľné príležitosti na výlety, turistiku a ďalšie outdoorové aktivity v okolí, ktoré vás zaručene nadchnú.        
         events: 
           - event(1):
-            image: assets/img/kokavska_izba_003.webp
+            image: assets/img/06_okolie/rozhladnaslopovo.webp
             title: Rozhľadňa Slopovo
-            desc: xx
+            icon: <span class="material-symbols-outlined fs-2 me-3">hiking</span>  30 min.
+            desc: Drevená, 9,5 metrov vysoká rozhľadňa postavená v roku 2015, nachádza sa na rozhraní obcí Klenovec a Kokava nad Rimavicou. Okrem turistov a domácich je táto lokalita vyhľadávaná 
+                  aj milovníkmi adrenalínových športov. V blízkosti rozhľadne sa nachádza štartovisko paraglidistov, ktoré je oficiálnou letovou plochou Leteckej amatérskej asociácie Slovenskej republiky.
+          - event(2):
+            image: assets/img/06_okolie/lyziarskestrediskolatky.webp
+            title: Lyžiarske stredisko Látky - Prašivá
+            icon: <span class="material-symbols-outlined fs-2 me-3">directions_car</span>  15 min.
+            desc: Lyžiarske stredisko Látky - Prašivá sa nachádza v aráli hotela Zerrenpach v krásnom a odľahlom prostredí Slovenského rudohoria. 
+                  Lyžiarske stredisko ocenia najmä rodiny s deťmi a začínajúci lyžiari. Stredisko disponuje dvomi lyžiarskymi vlekmi a jedným detským vlekom s dĺžkou 70 m. 
+                  Večerné lyžovanie sa teší rastúcej popularite, obľúbené medzi lyžiarmi naprieč generáciami. 
+          - event(3):
+            image: assets/img/06_okolie/mini-archeoskanzen.webp
+            title: Mini archeoskanzen Kyjatice
+            icon: <span class="material-symbols-outlined fs-2 me-3">directions_car</span>  22 min.
+            desc: Jedno z najvýznamnejších archeologických nálezísk Kyjatickej kultúry sa nachádza nad dedinkou Kyjatice. Ľud kyjatickej kultúry bol charakteristický rituálnym spaľovaním mŕtvych, 
+                  aj preto po sebe zanechali mnoho žiarových pohrebísk v podobe tzv. popolnicových polí. Objavených tu bolo viac než 200 žiarových hrobov.    
+          - event(4):
+            image: assets/img/06_okolie/certovadolina.webp
+            title: Čertova dolina
+            icon: <span class="material-symbols-outlined fs-2 me-3">directions_car</span>  29 min.
+            desc: Čertova dolina je skrytá prírodná rezervácia často nazývaná aj malý Slovenský raj, kde na vás čaká to najlepšie a najkrajšie prírodné divadlo.
+                  Čertova dolina je prekrásnym a skutočne výnimočným miestom, ktoré sa nachádza pri obci Tisovec, v Národnom parku Muránska planina. Lokalita bola vyhlásená 
+                  za prírodnú rezerváciu v roku 1993. Vyznačuje sa výrazným krasovým reliéfom a zachovanými lesnými spoločenstvami.               
+    
     - contact:
         title: Online <br> Rezervácie.
         desc: V prípade záujmu o rezerváciu, alebo overenie dostupnosti izieb, prosím, 

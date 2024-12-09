@@ -16,8 +16,8 @@ base:
 
 nav:
   menu: menu
-  home: domov
-  top: 
+  home: hero
+  top: hero
   accommodation: ubytovanie
   suites: apartmány
   prices: cenník   

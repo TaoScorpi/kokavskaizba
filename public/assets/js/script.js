@@ -1,33 +1,42 @@
 // NAVICONS  --------------------------------------------------------------------- //
 
 document.addEventListener("DOMContentLoaded", function () {
+  const navicons = document.querySelector(".navicons");
   const icons = document.querySelectorAll(".icon");
   const sections = document.querySelectorAll(".section");
 
-  // Nastavujeme pozorovateľa
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const iconId = `icon-${entry.target.id}`;
-        const icon = document.getElementById(iconId);
+  // Funkcia pre kontrolu stavu ikon
+  function updateIcons() {
+    const naviconsRect = navicons.getBoundingClientRect();
 
-        if (entry.isIntersecting) {
-         
-          // Ak je nad konkrétnou sekciou a má konkrétnu ikonu
-          if (entry.target.id === iconId.replace('icon-', '')) {
-            icon.style.color = "#d6bc88";
-          }
+    sections.forEach((section) => {
+      const sectionRect = section.getBoundingClientRect();
+      const iconId = `icon-${section.id}`;
+      const icon = document.getElementById(iconId);
+
+      if (
+        naviconsRect.bottom > sectionRect.top &&
+        naviconsRect.top < sectionRect.bottom
+      ) {
+        // Navigácia je nad touto sekciou
+        if (section.classList.contains("dark")) {
+          // Ak je sekcia "dark"
+          icons.forEach((icon) => (icon.style.color = "white")); // Všetky biele
+          icon.style.color = "#d6bc88"; // Aktívna zlatá
         } else {
-          // Reset farby, keď sa sekcia opustí
-          icon.style.color = ""; // Pôvodná farba (ak bola v CSS)
-        }  
-      });
-    },
-    { threshold: 0.1 } // Sledujeme, kedy je aspoň 50% sekcie viditeľné
-  );
+          // Ak je sekcia normálna
+          icons.forEach((icon) => (icon.style.color = "")); // Všetky sivé (CSS default)
+          icon.style.color = "#d6bc88"; // Aktívna zlatá
+        }
+      }
+    });
+  }
 
-  // Pridáme každú sekciu na sledovanie
-  sections.forEach((section) => observer.observe(section));
+  // Sledujeme skrolovanie
+  window.addEventListener("scroll", updateIcons);
+
+  // Prvé spustenie
+  updateIcons();
 });
 
 // NAVTABS GALLERY  ----------------------------------------------------------------- //

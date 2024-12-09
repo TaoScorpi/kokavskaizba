@@ -18,7 +18,25 @@
       </h2>
       <div id="collapse-{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#accordionPrices">
         <div class="accordion-body">
-          <p class="fs-3">This is the first item's accordion body.</p> 
+          <div class="row d-flex"> 
+          {% for bed in room.beds %}
+          <div class="col-lg-3 text-center">
+            <span class="d-block mb-1">{{ bed.icon|whitespace|raw }}</span>
+            <h5>
+              <span class="text-uppercase d-block pb-2">{{ bed.name|whitespace|raw }}</span>
+              <span class="d-block fs-6 fw-light">{{ bed.desc|whitespace|raw }}</span>
+            </h5>
+          </div>
+          {% endfor %}
+          </div>
+          <ul class="list-unstyled fs-5 pt-3" >
+          {% for price in room.prices %}
+            <div class="row w-100 py-1">
+              <span class="col text-uppercase">{{ price.name }}</span>
+              <span class="col col-md-auto col-lg-4 text-end"><b>{{ price.price }}</b> &nbsp; {{ price.desc }}</span>
+            </div> 
+          {% endfor %}
+          </ul>
         </div>
       </div>
     </div>

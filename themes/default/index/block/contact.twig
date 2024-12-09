@@ -1,13 +1,85 @@
 <section id="{{nav.contact}}">
   <div class="container-fluid padding-side">
-    <div class="content bg-grey rounded-5 pt-6">
+    <div class="content bg-grey rounded-5 pt-6 pb-6">
       <div class="row d-flex justify-content-center"> 
         <div class="col-md-4 align-items-middle">
           <h3 class="headline text-start"> {{ contact.title|whitespace|raw}}</h3>
           <p class="desc text-start"> {{ contact.desc|whitespace|raw}}</h2>
         </div>
-        <div class="col-md-5">
-          <h3>formular</h3>
+        <div class="col-md-5 ms-5">
+          <form class="form-transparent">
+            <div class="row d-flex">
+              <div class="col-lg-6 mb-3">
+                <input type="text" class="form-control fs-4" id="firstName" placeholder="Meno" required>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input type="text" class="form-control fs-4" id="lastName" placeholder="Priezvisko" required>
+              </div>
+            </div>  
+            <div class="row d-flex">
+              <div class="col-lg-12 mb-3">
+                 <input type="email" class="form-control fs-4" id="email" placeholder="Email" required>
+              </div>
+            </div> 
+            <div class="row d-flex">
+              <div class="col-lg-12 mb-3">
+                  <input type="tel" class="form-control fs-4" id="phone" placeholder="Telefón" required>
+              </div>
+            </div> 
+            <div class="row d-flex">
+              <div class="col-lg-6 mb-3 border-right">
+                <label for="startDate" class="form-label"><p>Termín od</p></label>
+                <input type="date" class="form-control fs-5" id="startDate" required>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="stay" class="form-label"><p>Počet nocí</p></label>
+                <input type="number" class="form-control fs-5" id="stay" min="1" placeholder="Predpokladaný počet nocí" required>
+              </div>
+            </div> 
+            <div class="row d-flex">
+              <label for="guests" class="form-label"><p>Počet osôb</p></label>
+              <div class="col-lg-6 mb-3 border-right">
+                <input type="number" class="form-control fs-5" id="adults" min="1" placeholder="Dospelí a deti nad 12 r." required>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input type="number" class="form-control fs-5" id="kids" min="1" placeholder="Deti do 12 r. vrátane" required>
+              </div>
+            </div>
+            <div class="row mt-2 mb-1">
+              <div class="col-12">
+                <label><p>Vpíšte čísla</p></label>
+              </div><!-- end col -->
+              <div class="col-3">
+                <input type="text" value="" placeholder="{{ booking.codes[0] }}" class="form-control form-num-0 text-center">
+              </div><!-- end col -->
+              <div class="col-3">
+                <input type="text" value="" placeholder="{{ booking.codes[1] }}" class="form-control form-num-1 text-center">
+              </div><!-- end col -->
+              <div class="col-3">
+                <input type="text" value="" placeholder="{{ booking.codes[2] }}" class="form-control form-num-2 text-center">
+              </div><!-- end col -->
+              <div class="col-3">
+                <input type="text" value="" placeholder="{{ booking.codes[3] }}" class="form-control form-num-3 text-center">
+              </div><!-- end col -->
+            </div><!-- end row -->
+            <div class="row mt-5">
+              <div class="form-element hidden-container input-container checkbox-container custom-checkbox">
+                <label for="optincontact" class="required"><p>
+                  Súhlasím so spracovaním osobných údajov podľa 
+                  <a class="" target="" href="/ochrana-osobnych-udajov">Zásad o spracovaní osobných údajov</a> 
+                  a prehlasujem, že mám viac ako 16 rokov. </p>
+                </label>
+                <div class="input"> 
+                  <input type="checkbox" class="form-gdpr" value="1" required="1">
+                </div><!-- end input -->
+              </div><!-- end form-element -->
+              <div class="form-element submit-container input-container btn btn-filled btn-big">
+                <div class="input"> 
+                  <input type="submit" name="send" id="send" class="form-send" value="Odoslať">
+                </div><!-- end input -->
+              </div><!-- end form-element -->
+            </div><!-- end row -->
+          </form>
         </div> 
       </div> 
     </div>  

@@ -1,9 +1,7 @@
-<section id="{{nav.restaurant}}" class="section padding-left">
+<section id="{{nav.restaurant}}" class="section padding-left dark">
   <div class="container-fluid">
-    <div class="col-lg-6 bg-left rounded-5" data-aos="fade-up" style="background-image: url({{ restaurant.image}})">
-    </div>
-  </div>
     <div class="container">
+     <img src="{{ restaurant.image}}" class="d-block rounded-5 left-sided" alt="{{ restaurant.title}}">
       <div class="row d-flex">   
         <div class="col-lg-5" data-aos="fade-up">
           <h2 class="headline"> {{ restaurant.title|whitespace|raw}}</h2>
